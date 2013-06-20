@@ -3,6 +3,7 @@ input = File.open("handles17JUNE2013.txt").read
 input.gsub!(/\r\n?/, "\n") #replace end of line characters
 input.gsub!(/\"/, "") #replace quotes with nothing
 input.gsub!(/rosebud/,"mastervideo-dev") #replace rosebud to mastervideo-dev
+input.gsub!(/MEDIA/,"STG") #replace MEDIA to STG
 
 
 input.each_line do |line|
